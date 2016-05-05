@@ -1,0 +1,30 @@
+$active-color: #289060;
+$hover-color: #286090;
+.table-hover {
+    tbody {
+        tr:hover {
+            td,
+            th {
+                /* TODO @extend .bg-primary; */
+                background-color: $hover-color;
+                color: #fff;
+            }
+        }
+        tr.active {
+            td,
+            th {
+                /* TODO @extend .bg-default; */
+                background-color: $active-color;
+                color: #000;
+            }
+        }
+        tr.active:hover {
+            td,
+            th {
+                /* TODO @extend .bg-primary; */
+                background-color: lighten($hover-color, 10%);
+                color: #fff;
+            }
+        }
+    }
+}
