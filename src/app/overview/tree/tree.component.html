@@ -6,17 +6,13 @@
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td>Warcraft 3</td>
-      <td>Warcraft III: Reign of Chaos</td>
-    </tr>
     <tr class="active">
       <td>Csini</td>
       <td>Csini</td>
     </tr>
-    <tr>
-      <td>Settlers</td>
-      <td>The Settlers</td>
+    <tr *ngFor="#app of apps">
+      <td>{{app.manualEntry ? app.manualEntry.abbr : app.autoEntry.abbr}}</td>
+      <td>{{app.manualEntry ? app.manualEntry.name : app.autoEntry.name}}</td>
     </tr>
   </tbody>
 </table>
