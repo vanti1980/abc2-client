@@ -18,7 +18,8 @@ const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin
  */
 const METADATA = {
   title: 'ABC2 Client Application',
-  baseUrl: '/'
+  baseUrl: '/',
+  SERVER_URL: 'http://localhost:3000'
 };
 
 /*

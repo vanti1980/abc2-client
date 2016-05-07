@@ -27,7 +27,6 @@ export class App {
     var userLang = navigator.language.split('-')[0];
     translate.setDefaultLang('en');
     translate.use(userLang);
-    console.log(userLang);
   }
 
   ngOnInit() {
