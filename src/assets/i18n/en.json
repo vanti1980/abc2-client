@@ -1,0 +1,13 @@
+{
+    "applications_header_id": "Id",
+    "applications_header_factsheetLink": "Fact Sheet",
+    "applications_header_abbr": "Abbreviation",
+    "applications_header_name": "Name",
+    "applications_header_owner": "Owner",
+    "applications_header_businessexpert": "Business Expert",
+    "applications_header_version": "Version",
+
+    "applications_tooltip_auto": "Automatic:",
+    "applications_tooltip_manual": "Manual:",
+    "title": "Applications"
+}

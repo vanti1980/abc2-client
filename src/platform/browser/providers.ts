@@ -10,9 +10,12 @@ import {FORM_PROVIDERS} from 'angular2/common';
 import {LocationStrategy, HashLocationStrategy} from 'angular2/platform/common';
 
 // Angular 2 Http
-import {HTTP_PROVIDERS} from 'angular2/http';
+import {HTTP_PROVIDERS, Http} from 'angular2/http';
 // Angular 2 Router
 import {ROUTER_PROVIDERS} from 'angular2/router';
+// ng2-translate
+import {TranslateLoader, TranslateStaticLoader, TranslateService} from 'ng2-translate/ng2-translate';
+
 
 /*
 * Application Providers/Directives/Pipes
@@ -22,6 +25,11 @@ export const APPLICATION_PROVIDERS = [
   ...FORM_PROVIDERS,
   ...HTTP_PROVIDERS,
   ...ROUTER_PROVIDERS,
+  provide(TranslateLoader, {
+    useFactory: (http: Http) => new TranslateStaticLoader(http, 'assets/i18n', '.json'),
+    deps: [Http]
+  }),
+  TranslateService,
   provide(LocationStrategy, { useClass: HashLocationStrategy })
 ];
 
