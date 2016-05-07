@@ -1,0 +1,13 @@
+{
+    "applications_header_id": "Azon.",
+    "applications_header_factsheetLink": "Adatlap",
+    "applications_header_abbr": "Rövidítés",
+    "applications_header_name": "Név",
+    "applications_header_owner": "Tulajdonos",
+    "applications_header_businessexpert": "Üzleti szakértő",
+    "applications_header_version": "Verzió",
+
+    "applications_tooltip_auto": "Automatikus:",
+    "applications_tooltip_manual": "Manuális:",
+    "title": "Alkalmazások"
+}
