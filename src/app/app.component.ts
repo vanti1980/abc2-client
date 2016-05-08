@@ -1,9 +1,10 @@
 /*
  * Angular 2 decorators and services
  */
-import {Component, ViewEncapsulation} from 'angular2/core';
-import {RouteConfig, Router} from 'angular2/router';
-import {TranslateService} from 'ng2-translate/ng2-translate';
+import {Component, ViewEncapsulation} from '@angular/core';
+import {RouteConfig, Router} from '@angular/router-deprecated';
+//TODO put back if they confirm pull request for Angular2 RC compatibility
+// import {TranslateService} from 'ng2-translate/ng2-translate';
 
 import {Overview} from './overview';
 
@@ -23,11 +24,13 @@ import {Overview} from './overview';
 ])
 export class App {
 
+/*
   constructor(translate: TranslateService) {
     var userLang = navigator.language.split('-')[0];
     translate.setDefaultLang('en');
     translate.use(userLang);
   }
+*/
 
   ngOnInit() {
   }
