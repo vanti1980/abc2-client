@@ -75,7 +75,19 @@ module.exports = {
     root: helpers.root('src'),
 
     // remove other default values
-    modulesDirectories: ['node_modules']
+    modulesDirectories: ['node_modules'],
+
+   alias: {
+      'angular2/core': helpers.root('node_modules/@angular/core'),
+      'angular2/testing': helpers.root('node_modules/@angular/core/testing'),
+      '@angular/testing': helpers.root('node_modules/@angular/core/testing'),
+      'angular2/platform/browser': helpers.root('node_modules/@angular/platform-browser/index.js'),
+      'angular2/testing': helpers.root('node_modules/@angular/testing/index.js'),
+      'angular2/router': helpers.root('node_modules/@angular/router-deprecated/index.js'),
+      'angular2/http': helpers.root('node_modules/@angular/http'),
+      'angular2/http/testing': helpers.root('node_modules/@angular/http/testing.js'),
+      'angular2/src': helpers.root('node_modules/@angular/core/src')
+    },
 
   },
 

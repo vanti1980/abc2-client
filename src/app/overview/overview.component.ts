@@ -1,4 +1,4 @@
-import {Component} from 'angular2/core';
+import {Component} from '@angular/core';
 import {Tree} from './tree';
 import {Abc2Label} from './abc2.label';
 import {FieldConvertPipe} from './abc2.field';
