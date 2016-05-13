@@ -1,6 +1,6 @@
 import {Component,  Input, Output,} from '@angular/core';
 import {CORE_DIRECTIVES, FORM_DIRECTIVES} from '@angular/common';
-import { TOOLTIP_DIRECTIVES } from 'ng2-bootstrap/ng2-bootstrap';
+// import { TOOLTIP_DIRECTIVES } from 'ng2-bootstrap/ng2-bootstrap';
 
 
 
@@ -33,10 +33,12 @@ cssClass : string;
   ngOnInit() {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
 
+    /*
     console.log('----label----');
     console.log(this.auto);
     console.log('M:');
     console.log(this.manual);
+    */
 
     this.tooltip = this.auto;
     this.label = this.manual;

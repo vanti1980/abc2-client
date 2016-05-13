@@ -19,7 +19,9 @@ const ForkCheckerPlugin = require('awesome-typescript-loader').ForkCheckerPlugin
 const METADATA = {
   title: 'ABC2 Client Application',
   baseUrl: '/',
-  SERVER_URL: 'http://localhost:3000'
+  SERVER_URL: 'http://localhost:3000',
+  GEOCODE_SERVICE: 'http://maps.google.com/maps/api/geocode/json',
+  GMAPS_API_KEY: 'AIzaSyCH3_fdihSeTzOMshsAnuUZoBshFv-2t5A'
 };
 
 /*

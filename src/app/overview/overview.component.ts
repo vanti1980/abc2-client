@@ -2,11 +2,12 @@ import {Component} from '@angular/core';
 import {Tree} from './tree';
 import {Abc2Label} from './abc2.label';
 import {FieldConvertPipe} from './abc2.field';
+import {Map} from './map';
 
 @Component({
   selector: 'overview',
   providers: [],
-  directives: [Tree, Abc2Label],
+  directives: [Tree, Abc2Label, Map],
   pipes: [FieldConvertPipe],
   styles: [require('./overview.component.scss')],
   template: require('./overview.html')

@@ -7,7 +7,6 @@ import {Pipe, PipeTransform} from '@angular/core';
 // The work of the pipe is handled in the tranform method with our pipe's class
 export class FieldConvertPipe implements PipeTransform {
   transform(entry: Object, field: string) {
-    console.log('transform');
 
 
     //console.log('entry:' + JSON.stringify(entry));
@@ -15,7 +14,7 @@ export class FieldConvertPipe implements PipeTransform {
 
 
     let fieldValue = entry[field];
-    console.log('fieldValue:' + fieldValue);
+    // console.log('fieldValue:' + fieldValue);
 
     return fieldValue;
   }

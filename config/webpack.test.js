@@ -198,6 +198,8 @@ module.exports = {
         'NODE_ENV': JSON.stringify(ENV),
         'HMR': false
         'SERVER_URL': JSON.stringify(METADATA.SERVER_URL),
+        'GEOCODE_SERVICE': JSON.stringify(METADATA.GEOCODE_SERVICE),
+        'GMAPS_API_KEY': JSON.stringify(METADATA.GMAPS_API_KEY)
       }
     }),
 
